@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#111827">
+  <meta name="description" content="PintaPro · Presupuestos rápidos de pintura y decoración">
   <title>PintaPro · Presupuestos de pintura</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -11,9 +12,9 @@
   <header>
     <div>
       <h1>PintaPro</h1>
-      <p>Pinturas Decodl SL · Presupuestos rápidos</p>
+      <p>Pinturas Deco DLSL · Presupuestos rápidos</p>
     </div>
-    <button id="newBtn" class="secondary">Nuevo</button>
+    <button id="newBtn" class="secondary">Nuevo presupuesto</button>
   </header>
 
   <main>
@@ -40,7 +41,7 @@
         <label>Distancia (km)<input id="km" type="number" min="0" step="1" value="0"></label>
         <label>Importe desplazamiento (€)<input id="desplazamiento" type="number" min="0" step="0.01" value="0"></label>
       </div>
-      <p class="hint">A partir de 50 km puedes añadir el coste por tiempo/desplazamiento.</p>
+      <p class="hint" id="travelHint">A partir de 50 km puedes añadir el coste por tiempo/desplazamiento.</p>
     </section>
 
     <section class="card total-card">
@@ -50,11 +51,12 @@
     </section>
 
     <section class="card">
-      <label>Observaciones<textarea id="notas" rows="4" placeholder="Materiales, preparación, condiciones, etc."></textarea></label>
+      <label>Observaciones<textarea id="notas" rows="4" placeholder="Materiales, preparación, condiciones, plazos, etc."></textarea></label>
       <div class="actions">
         <button id="printBtn">Imprimir / Guardar PDF</button>
         <button id="shareBtn" class="secondary">Compartir resumen</button>
       </div>
+      <p class="autosave">Los datos se guardan automáticamente en este dispositivo.</p>
     </section>
   </main>
 

@@ -11,3 +11,15 @@ button{border:0;border-radius:10px;padding:11px 14px;background:#16a34a;color:wh
 .actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
 @media(max-width:600px){.grid,.item-grid{grid-template-columns:1fr}.wide{grid-column:auto}.section-title{align-items:flex-start;flex-direction:column}header{padding:16px}.card{padding:15px}}
 @media print{header button,.section-title button,.remove,.actions{display:none!important}body{background:white}.card{box-shadow:none;border:1px solid #ddd;break-inside:avoid}}
+
+button{cursor:pointer;touch-action:manipulation}
+input:focus,select:focus,textarea:focus{outline:3px solid #16a34a22;border-color:#16a34a}
+.autosave{margin:12px 0 0;color:#6b7280;font-size:12px}
+.item{background:#fcfcfd}
+.total-card{border:1px solid #d1d5db}
+@media(max-width:600px){
+  button{min-height:44px}
+  input,select,textarea{font-size:16px}
+  .actions{display:grid}
+  .actions button{width:100%}
+}
